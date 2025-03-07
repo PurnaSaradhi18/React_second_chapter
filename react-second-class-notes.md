@@ -32,7 +32,7 @@ To Execute parcel, we have to run the command that is, **npx parcel index.html**
 - #### For React dependency, command: **npm install react**.
 - #### For React-DOM dependency, command: **npm install react-dom**.
 
-#### * If we want to run the application by the command: **npx parcel index.html**.
+#### \* If we want to run the application by the command: **npx parcel index.html**.
 
 ### Parcel -
 
@@ -53,8 +53,8 @@ To Execute parcel, we have to run the command that is, **npx parcel index.html**
 - To host on HTTPS server
 - Tree Shaking - it removes unused code automatically
 
-
 ### Building Production build through the command: **npx parcel build index.html**
+
 - Here, we could get error that is when we try to enter the command because our entry point is 'App.js' file so we have to remove the main object from package.json file.
 
 ```Javascript
@@ -62,3 +62,24 @@ To Execute parcel, we have to run the command that is, **npx parcel index.html**
 ```
 
 - When we run a command, 'production(prob) build' bundles, minimizes, compresses the code and creates new folder i.e, 'dist' which generates developement build of our project and hosted it.
+
+#### Git Commit the changes that we made when files are added or modified in our code. Using the commands,
+
+- **git status** - to know status of our files is there any change we did or not. If made changes then follow the next command.
+- **git add filename** - that add the file into the repository with specific file name.
+- **git commit -m "message"** - commit the changes
+- **git push origin main** - it pushes into the repository (modified in github).
+
+### Here in the package.json file, we can write scripts for run and build the project by our own.
+
+```javascript
+"scripts": {
+  "start": "parcel file-name",
+  "build": "parcel build file-name"
+}
+```
+
+- ### Here in the above code, we can see that we have two scripts, start and build so in the terminal we can simply write the commands:
+
+  - To run the project, **npm run start** or **npm start**.
+  - To build the project, **npm run build**.
